@@ -29,7 +29,7 @@ func canBeExtracted(artifact []int, excavated [][]bool) bool {
     startColumn := artifact[1]
     endColumn := artifact[3]
 
-    for row := startRow; r <= endRow; r++ {
+    for row := startRow; row <= endRow; row++ {
         for column := startColumn; c <= endColumn; c++ {
             if !excavated[row][column] {
                 return false
